@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txxtViewLevel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewLevel"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:gravity="left"
+        android:paddingLeft="5dp"
+        android:text="LEVEL: "
+        android:textColor="#00BCD4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLevelVal"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="191dp"
+        android:gravity="left"
+        android:text="10"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textViewLevel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:gravity="left"
+        android:text="SCORE:"
+        android:textColor="#00BCD4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/textViewLevelVal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewScoreVal"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:gravity="left"
+        android:text="100"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/textViewScore"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNum1"
+        android:layout_width="175dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="116dp"
+        android:background="#17298C"
+        android:backgroundTint="#9C27B0"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textViewOperator"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNum1"
+        tools:text="+" />
+
+    <TextView
+        android:id="@+id/textViewNum2"
+        android:layout_width="177dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="4dp"
+        android:background="#9C27B0"
+        android:gravity="center"
+        android:text="15"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOperator"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textViewEqual"
+        android:layout_width="97dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="8dp"
+        android:background="#F44336"
+        android:gravity="center"
+        android:text="="
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNum2" />
+
+    <EditText
+        android:id="@+id/textViewSum"
+        android:layout_width="411dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#E91E63"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textColor="#129617"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEqual"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSum"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="563dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonNextLevel"
+        android:layout_width="391dp"
+        android:layout_height="94dp"
+        android:text="NEXT LEVEL"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
